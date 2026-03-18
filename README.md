@@ -23,7 +23,8 @@ This is a modern responsive website built using HTML, CSS, and JavaScript.
 
 ## 📸 Preview
 
-(Add your website screenshot here)
+(## 🌍 Live Demo
+https://Sahilsangwan111.github.io/responsive-website)
 
 ## 📚 Future Improvements
 
