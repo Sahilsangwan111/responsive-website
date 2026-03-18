@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangwan Medical Shop - Your Trusted Local Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0d9488',
+                        secondary: '#115e59',
+                        dark: '#0f172a'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-gray-100 font-sans">
+    <custom-navbar></custom-navbar>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center bg-gradient-to-b from-dark to-secondary overflow-hidden">
+            <div class="absolute inset-0 bg-[url('https://static.photos/medical/1200x630')] opacity-20 bg-cover bg-center"></div>
+            <div class="relative z-10 text-center px-4 max-w-4xl">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 text-primary">Sangwan Medical Shop</h1>
+                <p class="text-xl md:text-2xl mb-8">Your Trusted Local Medical Store</p>
+                <p class="text-lg mb-10">Providing genuine medicines and healthcare products to our community since 2005</p>
+                <div class="flex gap-4 justify-center">
+                    <a href="/services.html" class="btn-primary">Our Services</a>
+                    <a href="/about-contact.html" class="btn-secondary">Contact Us</a>
+</div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 px-4 bg-gradient-to-b from-secondary to-dark">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-primary">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="service-card">
+                        <i data-feather="package" class="w-12 h-12 mb-4 text-primary"></i>
+                        <h3 class="text-xl font-semibold mb-2">All Types of Medicines</h3>
+                        <p>Wide range of generic and branded medicines available</p>
+                    </div>
+                    <div class="service-card">
+                        <i data-feather="file-text" class="w-12 h-12 mb-4 text-primary"></i>
+                        <h3 class="text-xl font-semibold mb-2">Prescription Medicines</h3>
+                        <p>Get your prescribed medicines with proper guidance</p>
+                    </div>
+                    <div class="service-card">
+                        <i data-feather="heart" class="w-12 h-12 mb-4 text-primary"></i>
+                        <h3 class="text-xl font-semibold mb-2">Healthcare Products</h3>
+                        <p>First aid, supplements, and personal care products</p>
+                    </div>
+                    <div class="service-card">
+                        <i data-feather="truck" class="w-12 h-12 mb-4 text-primary"></i>
+                        <h3 class="text-xl font-semibold mb-2">Home Delivery</h3>
+                        <p>Convenient delivery service for regular customers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 px-4 bg-dark">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-primary">About Us</h2>
+                <div class="bg-gray-800 bg-opacity-50 rounded-xl p-8 shadow-2xl">
+                    <p class="text-lg mb-6">Sangwan Medical Shop has been serving the local community with genuine medicines and healthcare products since 2005. Our founder, Mr. Rajesh Sangwan, started this pharmacy with a vision to provide affordable and authentic medicines to everyone in our neighborhood.</p>
+                    <p class="text-lg mb-6">We take pride in our knowledgeable staff who can guide you about medicines and their proper usage. Our shop maintains proper storage conditions for all medicines as per regulatory requirements.</p>
+                    <p class="text-lg">Over the years, we've built trust with thousands of customers who rely on us for their medical needs. Whether you need regular medicines or emergency supplies, we're here to help.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 px-4 bg-gradient-to-t from-secondary to-dark">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-primary">Contact Us</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="contact-info bg-gray-800 bg-opacity-50 rounded-xl p-8 shadow-2xl">
+                        <h3 class="text-2xl font-semibold mb-6 text-primary">Visit Our Store</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4">
+                                <i data-feather="map-pin" class="w-6 h-6 mt-1 text-primary"></i>
+                                <div>
+                                    <h4 class="font-medium">Address</h4>
+                                    <p>123 Medical Street, Near City Hospital, Delhi - 110092</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i data-feather="phone" class="w-6 h-6 mt-1 text-primary"></i>
+                                <div>
+                                    <h4 class="font-medium">Phone</h4>
+                                    <p>+91 98765 43210</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i data-feather="clock" class="w-6 h-6 mt-1 text-primary"></i>
+                                <div>
+                                    <h4 class="font-medium">Business Hours</h4>
+                                    <p>Monday-Saturday: 8:00 AM - 10:00 PM<br>Sunday: 9:00 AM - 9:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/919876543210" class="whatsapp-btn mt-8">
+                            <i data-feather="message-circle" class="w-5 h-5 mr-2"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                    <div class="contact-form bg-gray-800 bg-opacity-50 rounded-xl p-8 shadow-2xl">
+                        <h3 class="text-2xl font-semibold mb-6 text-primary">Send Us a Message</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block mb-1">Your Name</label>
+                                <input type="text" id="name" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div>
+                                <label for="phone" class="block mb-1">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div>
+                                <label for="message" class="block mb-1">Message</label>
+                                <textarea id="message" rows="4" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary w-full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="mt-12 bg-gray-800 bg-opacity-50 rounded-xl overflow-hidden shadow-2xl">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.367266430078!2d77.20656231508263!3d28.62873998242406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+<p style="text-align: center; margin-top: 20px; width: 100%; background: transparent; color: black; font-weight: bold;">
+    © 2026 Sangwan Medical Shop. All rights reserved.
+</p>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+
+
+</body>
+</html>

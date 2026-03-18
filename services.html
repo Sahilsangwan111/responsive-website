@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Sangwan Medical Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0d9488',
+                        secondary: '#115e59',
+                        dark: '#0f172a'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-gray-100 font-sans">
+    <custom-navbar></custom-navbar>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="relative py-32 flex items-center justify-center bg-gradient-to-b from-dark to-secondary overflow-hidden">
+            <div class="absolute inset-0 bg-[url('https://static.photos/medical/1200x630/42')] opacity-20 bg-cover bg-center"></div>
+            <div class="relative z-10 text-center px-4 max-w-4xl">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-primary">Our Services</h1>
+                <p class="text-xl md:text-2xl mb-8">Comprehensive Healthcare Solutions</p>
+                <p class="text-lg mb-10">We provide a wide range of medical products and services to meet all your healthcare needs</p>
+                <a href="#contact" class="btn-primary">Get in Touch</a>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="py-20 px-4 bg-gradient-to-b from-secondary to-dark">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="service-card">
+                        <i data-feather="file-text" class="w-12 h-12 mb-4 text-primary"></i>
+                        <h3 class="text-xl font-semibold mb-2">Prescription Medicines</h3>
+                        <p>We stock all major brands and generic alternatives for prescribed medications with proper storage conditions.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-primary mr-2 mb-2">Allopathy</span>
+                            <span class="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-primary mr-2 mb-2">Ayurvedic</span>
+                            <span class="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-primary mr-2 mb-2">Homeopathy</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <i data-feather="shopping-cart" class="w-12 h-12 mb-4 text-primary"></i>
+                        <h3 class="text-xl font-semibold mb-2">OTC Medicines</h3>
+                        <p>Wide selection of over-the-counter medications for common ailments like cold, fever, pain, allergies, and more.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-primary mr-2 mb-2">Pain Relief</span>
+                            <span class="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-primary mr-2 mb-2">Cold & Flu</span>
+                            <span class="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-primary mr-2 mb-2">Digestive</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <i data-feather="heart" class="w-12 h-12 mb-4 text-primary"></i>
+                        <h3 class="text-xl font-semibold mb-2">Healthcare Products</h3>
+                        <p>Complete range of health supplements, personal care items, first aid supplies, and wellness products.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-primary mr-2 mb-2">Vitamins</span>
+                            <span class="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-primary mr-2 mb-2">First Aid</span>
+                            <span class="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-primary mr-2 mb-2">Personal Care</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <i data-feather="thermometer" class="w-12 h-12 mb-4 text-primary"></i>
+                        <h3 class="text-xl font-semibold mb-2">Medical Equipment</h3>
+                        <p>Basic diagnostic equipment including thermometers, BP monitors, glucose meters, and mobility aids.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-primary mr-2 mb-2">Diagnostic</span>
+                            <span class="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-primary mr-2 mb-2">Support</span>
+                            <span class="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-primary mr-2 mb-2">Therapeutic</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <i data-feather="truck" class="w-12 h-12 mb-4 text-primary"></i>
+                        <h3 class="text-xl font-semibold mb-2">Home Delivery</h3>
+                        <p>Convenient home delivery service for regular customers within 5km radius. Same-day delivery available.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-primary mr-2 mb-2">Regular</span>
+                            <span class="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-primary mr-2 mb-2">Emergency</span>
+                            <span class="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-primary mr-2 mb-2">Subscription</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <i data-feather="users" class="w-12 h-12 mb-4 text-primary"></i>
+                        <h3 class="text-xl font-semibold mb-2">Health Consultations</h3>
+                        <p>Free basic health advice from our trained staff. We can help you choose appropriate OTC products.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-primary mr-2 mb-2">Advice</span>
+                            <span class="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-primary mr-2 mb-2">Guidance</span>
+                            <span class="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-primary mr-2 mb-2">Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="py-20 px-4 bg-dark">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-primary">Why Choose Sangwan Medical Shop?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="feature-card">
+                        <i data-feather="check-circle" class="w-10 h-10 mb-4 text-primary"></i>
+                        <h3 class="text-xl font-semibold mb-2">Genuine Products</h3>
+                        <p>We source directly from authorized distributors to ensure authenticity.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i data-feather="clock" class="w-10 h-10 mb-4 text-primary"></i>
+                        <h3 class="text-xl font-semibold mb-2">Long Hours</h3>
+                        <p>Open 8 AM to 10 PM, 7 days a week to serve you better.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i data-feather="award" class="w-10 h-10 mb-4 text-primary"></i>
+                        <h3 class="text-xl font-semibold mb-2">18 Years Experience</h3>
+                        <p>Serving the community with quality healthcare since 2005.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
